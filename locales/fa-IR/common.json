@@ -1,0 +1,297 @@
+{
+  "header": {
+    "language": "زبان",
+    "login": "ورود کاربران",
+    "logout": "خروج",
+    "langs": {
+      "EN": "انگلیسی",
+      "FA": "فارسی",
+      "AR": "عربی"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 ایکس مارکت. همه حقوق محفوظ است."
+  },
+  "auth": {
+    "login": {
+      "title": "ورود",
+      "subtitle": "با ایمیل وارد شوید.",
+      "email": "ایمیل",
+      "login": "ورود",
+      "password": "رمز عبور",
+      "registerLink": "ثبت نام",
+      "forgotPasswordLink": "فراموشی رمز عبور؟"
+    },
+    "changePassword": {
+      "title": "تغییر رمز عبور",
+      "oldPassword": "رمز عبور قبلی",
+      "newPassword": "رمز عبور جدید",
+      "repeatPassword": "تکرار رمز عبور جدید",
+      "invalidPassword": "رمز عبور باید حداقل ۸ کاراکتر، شامل حروف انگلیسی، عدد، کاراکتر خاص و بدون فاصله باشد.",
+      "passwordsDontMatch": "رمزهای عبور مطابقت ندارند.",
+      "changeFailed": "تغییر رمز عبور ناموفق بود. دوباره تلاش کنید.",
+      "success": "رمز عبور با موفقیت تغییر کرد! در حال انتقال به ورود...",
+      "submit": "تغییر رمز عبور"
+    },
+    "register": {
+      "title": "ایجاد حساب کاربری",
+      "subtitle": "اطلاعات شخصی خود را وارد کنید تا تجربه شما شخصی‌سازی شود.",
+      "fields": {
+        "firstName": "نام",
+        "lastName": "نام خانوادگی",
+        "birthdate": "تاریخ تولد",
+        "userName": "نام کاربری",
+        "gender": "جنسیت",
+        "password": "رمز عبور",
+        "repeatPassword": "تکرار رمز عبور",
+        "genderOptions": {
+          "male": "مرد",
+          "female": "زن",
+          "other": "سایر"
+        }
+      },
+      "errors": {
+        "required": "لطفاً همه فیلدهای ضروری را تکمیل کنید.",
+        "invalidPassword": "رمز عبور باید حداقل ۸ کاراکتر، شامل حروف انگلیسی، عدد، کاراکتر خاص و بدون فاصله باشد.",
+        "passwordsDontMatch": "رمزهای عبور مطابقت ندارند."
+      },
+      "submit": "ایجاد حساب"
+    },
+    "forgot": {
+      "title": "بازیابی دسترسی",
+      "subtitle": "ایمیل یا شماره موبایل را انتخاب کنید تا لینک بازیابی ارسال شود.",
+      "emailTab": "ایمیل",
+      "phoneTab": "موبایل",
+      "emailLabel": "آدرس ایمیل",
+      "phoneLabel": "شماره موبایل",
+      "errors": {
+        "required": "ابتدا یک مقدار وارد کنید."
+      },
+      "success": "لطفاً صندوق پیام خود را بررسی کنید.",
+      "submit": "ارسال لینک بازیابی"
+    }
+  },
+  "components": {
+    "dropdown": {
+      "search": "جستجو کنید..."
+    },
+    "passwordInput": {
+      "charLengthLable": "حداقل ۸ کاراکتر",
+      "charLengthError": "رمز عبور باید حداقل ۸ کاراکتر باشد.",
+      "noSpaceLable": "بدون فاصله",
+      "noSpaceError": "رمز عبور نباید شامل فاصله باشد.",
+      "onlyEnglishCharLable": "شامل یک حرف انگلیسی",
+      "onlyEnglishCharError": "رمز عبور باید حداقل یک حرف انگلیسی داشته باشد.",
+      "enterNumberLable": "شامل یک عدد",
+      "enterNumberError": "رمز عبور باید حداقل یک عدد داشته باشد.",
+      "specialCharLable": "شامل یک کاراکتر خاص",
+      "specialCharError": "رمز عبور باید حداقل یک کاراکتر خاص داشته باشد.",
+      "validCharLabel": "فقط حروف انگلیسی، اعداد و کاراکترهای خاص",
+      "validCharError": "رمز عبور باید فقط شامل حروف انگلیسی، اعداد و کاراکترهای خاص باشد.",
+      "passwordStrength": "سختی کلمه عبور",
+      "strong": "قوی",
+      "medium": "معمولی",
+      "weak": "ضعیف"
+    },
+    "ageRestrictedDateDropdown": {
+      "year": "سال",
+      "month": "ماه",
+      "day": "روز"
+    },
+    "pagination": {
+      "prev": "صفحه قبل",
+      "next": "صفحه بعد"
+    },
+    "dataGrid": {
+      "noData": "داده‌ای یافت نشد"
+    }
+  },
+  "utils": {
+    "date": {
+      "today": "امروز",
+      "yesterday": "دیروز",
+      "at": "ساعت"
+    }
+  },
+  "exchange": {
+    "cex": {
+      "proofOfreserve": "مبلغ",
+      "name": "نام",
+      "detail": "جزییات",
+      "title": "ذخایر صرافی‌ها",
+      "subtitle": "اطلاعات ذخایر در صرافی‌های بزرگ",
+      "details": {
+        "overview": "نمای کلی",
+        "asset": "دارایی‌ها",
+        "announcement": "اطلاعیه‌ها",
+        "news": "اخبار",
+        "newlisting": "فهرست جدید",
+        "market": "بازار",
+        "tabs": {
+          "overview": {
+
+          },
+          "asset": {
+            "title": "دارایی‌ها",
+            "type": "نوع",
+            "spot": "معامله لحظه‌ای",
+            "futures": "معاملات آتی",
+            "orderBook": "دفتر سفارش"
+          },
+          "announcement": {
+
+          },
+          "news": {
+
+          },
+          "newlisting": {
+            
+          },
+          "market": {
+            "title": "بازار",
+            "pair": "جفت ارز",
+            "search": "جستجو",
+            "searchPlaceholder": "مثلاً BTC/USDT"
+          }
+        }
+      }
+    },
+    "dex": {
+      "proofOfreserve": "مبلغ",
+      "name": "نام",
+      "details": "جزییات",
+      "title": "ذخایر صرافی‌ها",
+      "subtitle": " اطلاعات ذخایر در صرافی‌های بزرگ"
+    }
+  },
+  "server": {
+    "domain": {
+      "search": "جستجو",
+      "buy": "خرید",
+      "price": "قیمت",
+      "domain": "دامنه",
+      "title": "جستجو دامنه",
+      "enterDomain": "دامنه مورد نظر را وارد کنید"
+    },
+    "vps": {
+      "title": "پلن‌های میزبانی VPS",
+      "monthly": "ماهانه",
+      "yearly": "سالانه",
+      "order": "سفارش",
+      "configure": {
+        "title": "پیکربندی VPS",
+        "subtitle": "پیش از تکمیل سفارش، پلن خود را بررسی کرده و VPS را مطابق نیازتان شخصی‌سازی کنید.",
+        "orderSummary": "خلاصه سفارش",
+        "vpsPlan": "پلن VPS",
+        "billingPeriod": "دوره پرداخت",
+        "basePrice": "قیمت پایه",
+        "tax": "مالیات",
+        "total": "مبلغ قابل پرداخت",
+        "continue": "ادامه",
+        "rootPassword": "رمز عبور Root",
+        "OS": "سیستم‌عامل",
+        "level": "سطح پشتیبانی",
+        "location": "موقعیت دیتاسنتر",
+        "period": "دوره زمانی",
+        "monthly": "ماهانه",
+        "yearly": "سالانه",
+        "serverConfig": "پیکربندی سرور",
+        "configurableOptions": "انتخاب های قابل پیکربندی",
+        "additionalInfo": "اطلاعات تکمیلی",
+        "dataCenter": "Data Center",
+        "extraDisk": "دیسک اضافه",
+        "required": "این فیلد اجباری است",
+        "noNeed": "نیازی ندارم",
+        "free": "رایگان",
+        "payable": "قابل پرداخت",
+        "pay": "پرداخت",
+        "cryptoPayType": "روش پرداخت کریپتو",
+        "selectCrypto": "ارز دیجیتال مورد نظر خود را برای پرداخت انتخاب کنید",
+        "back": "بازگشت به مرحله 1",
+        "configureYourServer": "سرور را پیکربندی کنید",
+        "chooseCryptoMethod": "روش پرداخت را انتخاب کنید",
+        "balance": "موجودی",
+        "payableAmount": "مبلغ قابل پرداخت",
+        "walletAddress": "آدرس کیف پول",
+        "networkWarning": "فقط از شبکه {network} استفاده کنید. ارسال از شبکه دیگر منجر به از دست رفتن دارایی می‌شود.",
+        "levels": {
+          "basic": "پایه",
+          "pro": "حرفه‌ای",
+          "enterprise": "سازمانی"
+        }
+      }
+    }
+  },
+  "fullnode": {
+    "fullNode": "نود کامل",
+    "overview": "نمای کلی",
+    "install": "نصب",
+    "developer": "توسعه‌دهنده",
+    "pricing": "قیمت‌گذاری",
+    "welcomeToFullNode": "به داشبورد نود کامل خوش آمدید",
+    "fullNodeDescription": "نودهای کامل بلاکچین خود را با زیرساخت سازمانی و تحلیل‌های لحظه‌ای مدیریت و نظارت کنید.",
+    "getStarted": "شروع کنید",
+    "documentation": "مستندات",
+    "allNodesOnline": "همه نودها آنلاین",
+    "activeNodes": "نودهای فعال",
+    "totalRequests": "کل درخواست‌ها",
+    "uptime": "آپتایم",
+    "avgResponse": "میانگین پاسخ",
+    "fullNodeService": "سرویس نود کامل",
+    "explore": "کاوش کنید"
+  },
+  "repo": {
+    "rpc": {
+      "title": "سرورهای RPC",
+      "subtitle": "لیست نقاط انتهایی RPC عمومی و حرفه‌ای که می‌توانید به کیف پول خود اضافه کنید.",
+      "addMetaMask": "افزودن به متامسک"
+    },
+    "wallet": {
+      "title": "اتصال کیف پول",
+      "subtitle": "کیف پول مورد نظر خود را انتخاب کنید",
+      "downloadFor": "دانلود برای:",
+      "ios": "iOS",
+      "android": "اندروید",
+      "extension": "افزونه مرورگر"
+    }
+  },
+  "asset": {
+    "title": "دارایی‌ها",
+    "subtitle": "View and monitor real-time prices of financial assets",
+    "types": {
+      "crypto": "ارزهای دیجیتال",
+      "energy": "انرژی",
+      "metal": "فلزات"
+    },
+    "columns": {
+      "asset": "دارایی",
+      "price": "قیمت"
+    },
+    "buttons": {
+      "monitor": "رصد"
+    },
+    "errors": {
+      "invalidType": "نوع دارایی نامعتبر است. لطفاً از ارزهای دیجیتال، انرژی یا فلزات استفاده کنید"
+    }
+  },
+  "staking": {
+    "title": "استیکینگ",
+    "subtitle": "سرمایه‌گذاری کنید و درآمد غیرفعال کسب کنید",
+    "types": {
+      "crypto": "ارزهای دیجیتال",
+      "fiat": "ارزهای فیات",
+      "metal": "فلزات"
+    },
+    "columns": {
+      "asset": "دارایی",
+      "invesrment": "سرمایه‌گذاری",
+      "income": "درآمد"
+    },
+    "buttons": {
+      "buy": "خرید"
+    },
+    "errors": {
+      "invalidType": "نوع استیکینگ نامعتبر است. لطفاً از ارزهای دیجیتال، ارزهای فیات یا فلزات استفاده کنید"
+    }
+  }
+}

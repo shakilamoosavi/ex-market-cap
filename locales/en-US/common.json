@@ -1,0 +1,291 @@
+{
+  "header": {
+    "language": "Language",
+    "login": "Login",
+    "logout": "Logout",
+    "langs": {
+      "EN": "English",
+      "FA": "Persian",
+      "AR": "Arabic"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Ex Market. All rights reserved."
+  },
+  "auth": {
+    "login": {
+      "title": "Login",
+      "subtitle": "Login with your email.",
+      "email": "Email",
+      "login": "Login",
+      "password": "Password",
+      "registerLink": "Register",
+      "forgotPasswordLink": "Forgot password?"
+    },
+    "changePassword": {
+      "title": "Change Password",
+      "oldPassword": "Old Password",
+      "newPassword": "New Password",
+      "repeatPassword": "Repeat New Password",
+      "invalidPassword": "Password must be at least 8 characters, include English letters, a number, a special character, and no spaces.",
+      "passwordsDontMatch": "Passwords do not match.",
+      "changeFailed": "Password change failed. Please try again.",
+      "success": "Password changed successfully! Redirecting to login...",
+      "submit": "Change Password"
+    },
+    "register": {
+      "title": "Create an Account",
+      "subtitle": "Enter your personal information to personalize your experience.",
+      "fields": {
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "birthdate": "Birthdate",
+        "userName": "Username",
+        "gender": "Gender",
+        "password": "Password",
+        "repeatPassword": "Repeat Password",
+        "genderOptions": {
+          "male": "Male",
+          "female": "Female",
+          "other": "Other"
+        }
+      },
+      "errors": {
+        "required": "Please complete all required fields.",
+        "invalidPassword": "Password must be at least 8 characters, include English letters, a number, a special character, and no spaces.",
+        "passwordsDontMatch": "Passwords do not match."
+      },
+      "submit": "Create Account"
+    },
+    "forgot": {
+      "title": "Recover Access",
+      "subtitle": "Choose email or phone to receive the recovery link.",
+      "emailTab": "Email",
+      "phoneTab": "Phone",
+      "emailLabel": "Email Address",
+      "phoneLabel": "Phone Number",
+      "errors": {
+        "required": "Please enter a value."
+      },
+      "success": "Please check your inbox.",
+      "submit": "Send Recovery Link"
+    }
+  },
+  "components": {
+    "dropdown": {
+      "search": "Search..."
+    },
+    "passwordInput": {
+      "charLengthLable": "At least 8 characters",
+      "charLengthError": "Password must be at least 8 characters.",
+      "noSpaceLable": "No spaces",
+      "noSpaceError": "Password must not contain spaces.",
+      "onlyEnglishCharLable": "Contains an English letter",
+      "onlyEnglishCharError": "Password must contain at least one English letter.",
+      "enterNumberLable": "Contains a number",
+      "enterNumberError": "Password must contain at least one number.",
+      "specialCharLable": "Contains a special character",
+      "specialCharError": "Password must contain at least one special character.",
+      "validCharLabel": "Only English letters, numbers and special characters",
+      "validCharError": "Password must only include English letters, numbers and special characters.",
+      "passwordStrength": "Password Strength",
+      "strong": "Strong",
+      "medium": "Medium",
+      "weak": "Weak"
+    },
+    "ageRestrictedDateDropdown": {
+      "year": "Year",
+      "month": "Month",
+      "day": "Day"
+    },
+    "pagination": {
+      "prev": "Prev",
+      "next": "Next"
+    },
+    "dataGrid": {
+      "noData": "No data found"
+    }
+  },
+  "utils": {
+    "date":{
+      "today": "Today",
+      "yesterday": "Yesterday",
+      "at": "at"
+    }
+  },
+  "exchange": {
+    "cex": {
+      "proofOfreserve": "Amount",
+      "name": "Name",
+      "detail": "Details",
+      "title": "Exchange Reserves",
+      "subtitle": "Reserve information of major exchanges",
+      "details": {
+        "overview": "Overview",
+        "asset": "Assets",
+        "announcement": "Announcements",
+        "news": "News",
+        "newlisting": "Newlisting",
+        "market": "Market",
+        "tabs": {
+          "overview": {},
+          "asset": {
+            "title": "Assets",
+            "type": "Type",
+            "spot": "Spot",
+            "futures": "Futures",
+            "orderBook": "Order Book"
+          },
+          "announcement": {},
+          "news": {},
+          "newlisting": {},
+          "market": {
+            "title": "Market",
+            "pair": "Pair",
+            "search": "Search",
+            "searchPlaceholder": "e.g. BTC/USDT"
+          }
+        }
+      }
+    },
+    "dex": {
+      "proofOfreserve": "Amount",
+      "name": "Name",
+      "details": "Details",
+      "title": "Exchange Reserves",
+      "subtitle": "Reserve information of major exchanges"
+    }
+  },
+  "server": {
+    "domain": {
+      "search": "Search",
+      "buy": "Buy",
+      "price": "Price",
+      "domain": "Domain",
+      "title": "Domain Search",
+      "enterDomain": "Enter the desired domain"
+    },
+    "vps": {
+      "title": "VPS Hosting Plans",
+      "monthly": "Monthly",
+      "yearly": "Yearly",
+      "order": "Order Now",
+      "configure": {
+        "title": "Configure Your VPS",
+        "subtitle": "Review your plan and customize your VPS before completing your order.",
+        "orderSummary": "Order Summary",
+        "vpsPlan": "VPS Plan",
+        "billingPeriod": "Billing Period",
+        "basePrice": "Base Price",
+        "tax": "Tax",
+        "total": "Total",
+        "continue": "Continue",
+        "rootPassword": "Root Password",
+        "OS": "Operating System",
+        "level": "Support Level",
+        "location": "Datacenter Location",
+        "period": "Period",
+        "monthly": "Monthly",
+        "yearly": "Yearly",
+        "serverConfig": "Server Config",
+        "configurableOptions": "Configurable Options",
+        "additionalInfo": "Additional Info",
+        "dataCenter": "Data Center",
+        "extraDisk": "Extra Disk",
+        "required": "Required",
+        "noNeed": "No Need",
+        "free": "Free",
+        "payable": "Payable",
+        "pay": "Pay",
+        "cryptoPayType": "Crypto Payment Method",
+        "selectCrypto": "Select your preferred cryptocurrency for payment",
+        "back": "Back to step 1",
+        "configureYourServer": "Configure your server",
+        "chooseCryptoMethod": "Choose Crypto method",
+        "balance": "Balance",
+        "payableAmount": "Payable Amount",
+        "walletAddress": "Wallet Address",
+        "networkWarning": "Only use {network} network. Sending from another network will result in loss of assets.",
+        "levels": {
+          "basic": "Basic",
+          "pro": "Pro",
+          "enterprise": "Enterprise"
+        }
+      }
+
+
+    }
+  },
+  "fullnode": {
+    "fullNode": "Full Node",
+    "overview": "Overview",
+    "install": "Install",
+    "developer": "Developer",
+    "pricing": "Pricing",
+    "welcomeToFullNode": "Welcome to Full Node Dashboard",
+    "fullNodeDescription": "Manage and monitor your blockchain full nodes with enterprise-grade infrastructure and real-time analytics.",
+    "getStarted": "Get Started",
+    "documentation": "Documentation",
+    "allNodesOnline": "All Nodes Online",
+    "activeNodes": "Active Nodes",
+    "totalRequests": "Total Requests",
+    "uptime": "Uptime",
+    "avgResponse": "Avg Response",
+    "fullNodeService": "Full Node Service",
+    "explore": "Explore"
+  },
+  "repo": {
+    "rpc": {
+      "title": "RPC Servers",
+      "subtitle": "List of public and professional RPC endpoints you can add to your wallet.",
+      "addMetaMask": "Add MetaMAsk"
+    },
+    "wallet": {
+      "title": "Connect Your Wallet",
+      "subtitle": "Choose your preferred wallet to get started",
+      "downloadFor": "Download for:",
+      "ios": "iOS",
+      "android": "Android",
+      "extension": "Browser Extension"
+    }
+  },
+  "asset": {
+    "title": "Assets",
+    "subtitle": "View and monitor real-time prices of financial assets",
+    "types": {
+      "crypto": "Crypto",
+      "energy": "Energy",
+      "metal": "Metal"
+    },
+    "columns": {
+      "asset": "Asset",
+      "price": "Price"
+    },
+    "buttons": {
+      "monitor": "Monitor"
+    },
+    "errors": {
+      "invalidType": "Invalid asset type. Please use: crypto, energy, or metal"
+    }
+  },
+  "staking": {
+    "title": "Staking",
+    "subtitle": "Invest and earn passive income",
+    "types": {
+      "crypto": "Crypto",
+      "fiat": "Fiat",
+      "metal": "Metal"
+    },
+    "columns": {
+      "asset": "Asset",
+      "invesrment": "Invesrment",
+      "income": "Income"
+    },
+    "buttons": {
+      "buy": "Buy"
+    },
+    "errors": {
+      "invalidType": "Invalid staking type. Please use: crypto, fiat, or metal"
+    }
+  }
+}
