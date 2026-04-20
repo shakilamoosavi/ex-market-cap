@@ -1,7 +1,7 @@
 import { useState, useEffect, CSSProperties } from 'react'
 
 interface CustomInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
-  label: string
+  label?: string
   value: string
   css?: Record<string, CSSProperties | string>
 }

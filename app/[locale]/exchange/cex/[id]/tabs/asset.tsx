@@ -57,7 +57,7 @@ export default function AssetTab() {
         columnList={columns}
         dataList={mockData}
         pageSize={5}
-        onButtonClick={(item, colKey) => handleAction(item, colKey)}
+        onButtonClick={(event) => handleAction(event.row, event.columnKey)}
       />
     </div>
   );

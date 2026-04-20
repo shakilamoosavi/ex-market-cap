@@ -204,9 +204,10 @@ export default function AgeRestrictedDateDropdown({
 
   const [touched, setTouched] = useState(false);
 
-  const floatYear = focusYear || year;
-  const floatMonth = focusMonth || month;
-  const floatDay = focusDay || day;
+  const floatYear = focusYear || year !== "";
+  const floatMonth = focusMonth || month !== "";
+  const floatDay = focusDay || day !== "";
+
 
   const years = Array.from({ length: 100 }, (_, i) => maxYear - i);
 
@@ -256,7 +257,7 @@ export default function AgeRestrictedDateDropdown({
     onChange?.(null);
   }, [year, month, day, touched]);
 
-  const labelStyle = (floating: boolean) => ({
+  const labelStyle = (floating: boolean): React.CSSProperties => ({
     position: "absolute",
     left: "16px",
     top: floating ? "6px" : "50%",
@@ -264,9 +265,10 @@ export default function AgeRestrictedDateDropdown({
     color: floating ? "#3b82f6" : "#9ca3af",
     transform: floating ? "translateY(0)" : "translateY(-50%)",
     transition: "all 0.15s ease-out",
-    pointerEvents: "none",
+    pointerEvents: "none" as const,
     fontWeight: 500
   });
+
 
   const boxClass =
     "w-full border border-gray-300 rounded px-4 pt-5 pb-2 text-sm bg-white outline-none focus:border-blue-500";

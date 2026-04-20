@@ -9,7 +9,7 @@ const COUNTRY_LANG_MAP: Record<string, string> = {
 }
 
 const LOCAL_IPS = ['127.0.0.1', '::1', 'localhost']
-const DEV_DEFAULT_COUNTRY = 'IR' // ← set your country here for local dev
+const DEV_DEFAULT_COUNTRY = 'US' // ← set your country here for local dev
 
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl

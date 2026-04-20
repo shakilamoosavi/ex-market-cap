@@ -1,4 +1,4 @@
-export type ColumnFormat = 'date' | 'dateTime' | 'time' | 'money' | 'text' | 'number' | 'boolean' | 'button' | 'percent';
+export type ColumnFormat = 'date' | 'dateTime' | 'time' | 'money' | 'text' | 'number' | 'boolean' | 'button' | 'percent' | 'custom';
 
 export interface ColumnDef {
   key: string;
@@ -10,7 +10,7 @@ export interface ColumnDef {
   buttonLabel?: string;
   buttonType?: 'submit' | 'cancel' | 'info' | 'link';
   linkUrl?: string;
-  dataFunction?: (item: any) => string | number;
+  dataFunction?: (item: any) => React.ReactNode;
 }
 
 export interface ButtonClickEvent {

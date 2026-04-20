@@ -2,16 +2,16 @@
 
 import { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
-import { ColumnDef } from "@/components/DataGrid/types";
+import { ColumnDef, ButtonClickEvent } from "@/components/DataGrid/types";
 import { DataGrid } from "@/components/DataGrid/DataGrid";
 import { useTranslations } from "next-intl";
-
+import React from "react";
 type StakingType = "crypto" | "fiat" | "metal";
 
 interface StakingAsset {
   asset: string;
-  min: number;  // joda shod
-  max: number;  // joda shod
+  min: number;
+  max: number;
   income: string;
 }
 
@@ -69,23 +69,23 @@ export default function StakingPage() {
       key: "invesrment",
       label: t("columns.invesrment"),
       sortable: false,
-      format: "text",
-      dataFunction: (item: StakingAsset) => {
+      format: "custom",
+      dataFunction: (item: StakingAsset): React.ReactNode => {
         return (
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <span>{item.min}</span>
-            <svg 
-              width="16" 
-              height="16" 
-              viewBox="0 0 24 24" 
-              fill="none" 
-              stroke="currentColor" 
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
               strokeWidth="2"
-              strokeLinecap="round" 
+              strokeLinecap="round"
               strokeLinejoin="round"
               style={{ color: '#666' }}
             >
-              <path d="M5 12h14M12 5l7 7-7 7"/>
+              <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
             <span>{item.max}</span>
           </div>
@@ -106,7 +106,8 @@ export default function StakingPage() {
     },
   ];
 
-  const handleButtonClick = (item: StakingAsset) => {
+  const handleButtonClick = (event: ButtonClickEvent) => {
+    const item = event.row as StakingAsset;
     console.log("Buy clicked:", item);
   };
 

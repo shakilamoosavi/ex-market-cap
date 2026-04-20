@@ -286,12 +286,17 @@ export default function ConfigureVPSPage() {
                 </div>
 
                 <Section title={t("period")}>
-                  <Dropdown dataList={periodList} value={period} onChange={setPeriod} />
+                  <Dropdown 
+                    dataList={periodList} 
+                    value={period} 
+                    onChange={(value) => setPeriod(String(value))} 
+                  />
                 </Section>
 
                 <Section title={t("serverConfig")}>
                   <Field label={`* ${t("rootPassword")}`} error={errors.rootPass}>
                     <CustomInput
+                      label={`* ${t("rootPassword")}`}
                       type="password"
                       value={rootPass}
                       onChange={(e) => {
@@ -305,23 +310,49 @@ export default function ConfigureVPSPage() {
                 <Section title={t("configurableOptions")}>
                   <div className="grid grid-cols-2 gap-4">
                     <Field label={t("location")}>
-                      <Dropdown dataList={locationList} value={location} onChange={(val) => { setLocation(val); if (val) setErrors((p) => ({ ...p, location: undefined })); }} />
+                      <Dropdown 
+                        dataList={locationList} 
+                        value={location} 
+                        onChange={(val) => { 
+                          setLocation(String(val)); 
+                          if (val) setErrors((p) => ({ ...p, location: undefined })); 
+                        }} 
+                      />
                     </Field>
                     <Field label={t("OS")}>
-                      <Dropdown dataList={OSList} value={os} onChange={setOs} />
+                      <Dropdown 
+                        dataList={OSList} 
+                        value={os} 
+                        onChange={(val) => setOs(String(val))} 
+                      />
                     </Field>
                     <Field label={t("extraDisk")}>
-                      <Dropdown dataList={diskList} value={disk} onChange={setDisk} />
+                      <Dropdown 
+                        dataList={diskList} 
+                        value={disk} 
+                        onChange={(val) => setDisk(String(val))} 
+                      />
                     </Field>
                     <Field label={t("level")}>
-                      <Dropdown dataList={supportLevelList} value={support} onChange={setSupport} />
+                      <Dropdown 
+                        dataList={supportLevelList} 
+                        value={support} 
+                        onChange={(val) => setSupport(String(val))} 
+                      />
                     </Field>
                   </div>
                 </Section>
 
                 <Section title={t("additionalInfo")}>
                   <Field label={`* ${t("dataCenter")}`} error={errors.location}>
-                    <Dropdown dataList={locationList} value={location} onChange={(val) => { setLocation(val); if (val) setErrors((p) => ({ ...p, location: undefined })); }} />
+                    <Dropdown 
+                      dataList={locationList} 
+                      value={location} 
+                      onChange={(val) => { 
+                        setLocation(String(val)); 
+                        if (val) setErrors((p) => ({ ...p, location: undefined })); 
+                      }} 
+                    />
                   </Field>
                 </Section>
               </>

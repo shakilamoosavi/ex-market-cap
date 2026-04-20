@@ -10,6 +10,8 @@ import AgeRestrictedDatePicker from "@/components/AgeRestrictedDatePicker";
 import Logo from "../../Logo";
 import CustomRadioButton from "@/components/CustomRadioButton";
 import CustomButton from "@/components/CustomButton";
+import type { DateObject } from "react-multi-date-picker";
+
 
 
 const DatePicker = dynamic(() => import("react-multi-date-picker"), { ssr: false });
@@ -118,8 +120,8 @@ export function RegisterForm() {
           <PasswordInput
             value={form.password}
             onChange={val => setForm(prev => ({ ...prev, password: val }))}
-            showValidationConditions="true"
-            showValidationStatus="true"
+            showValidationConditions={true}
+            showValidationStatus={true}
             label={t("fields.password")}
             onError={setPasswordError}
           />

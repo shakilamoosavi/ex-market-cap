@@ -90,7 +90,7 @@ const PasswordInput: React.FC<PasswordInputProps> = ({
           className="w-full rounded border px-3 py-2 focus:border-blue-500 focus:outline-none"
           autoComplete="new-password"
           inputMode="text"
-          style={{ WebkitTextSecurity: show ? 'none' : 'disc' }}
+          style={{ WebkitTextSecurity: show ? "none" : "disc" } as React.CSSProperties}
         />
         <button
           type="button"

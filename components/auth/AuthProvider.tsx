@@ -5,9 +5,6 @@ export type UserProfile = {
   firstName: string;
   lastName: string;
   email: string;
-  phone: string;
-  country: string;
-  city: string;
   birthdate: string;
   walletUSD: number;
 };
@@ -39,9 +36,6 @@ const defaultUser: UserProfile = {
   firstName: "Ava",
   lastName: "Karimi",
   email: "ava@example.com",
-  phone: "+1 555 111 2222",
-  country: "United States",
-  city: "Austin",
   birthdate: "1994-04-17",
   walletUSD: 2750,
 };
